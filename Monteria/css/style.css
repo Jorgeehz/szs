@@ -1,0 +1,395 @@
+:root {
+  --fuenteHeading: "PT Sans", sans-serif;
+  --funteParrafos: "Open Sans" sans-serif;
+
+  --blanco: #fff;
+  --negro: #000;
+  --gris: #e1e1e1;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--funteParrafos);
+  font-size: 1.6rem;
+  line-height: 2;
+  margin: 0;
+  padding: 0;
+}
+
+/* Globales */
+
+.contenedor {
+  width: min(90%, 120rem);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fuenteHeading);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Utilidades */
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.centrar-text {
+  text-align: center;
+}
+
+/* Header */
+
+.header-bg {
+  background-image: url(/img/banner.jpg);
+  height: 60rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.header-bg__text {
+  text-align: center;
+  color: var(--blanco);
+  padding-top: 6rem;
+  text-shadow: 2px 2px 0 #000;
+  font-weight: bold;
+}
+
+.header-bg__text p {
+  text-shadow: 1px 1px 0 #000;
+}
+
+@media (min-width: 768px) {
+  .header-bg {
+    height: 40rem;
+  }
+
+  .header-bg__text p {
+    font-size: 2rem;
+    text-shadow: 1px 1px 0 #000;
+  }
+}
+
+@media (min-width: 768px) {
+  .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  width: 5rem;
+}
+
+@media (min-width: 768px) {
+  .navegacion {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .logo {
+    width: 10rem;
+  }
+}
+
+.barra {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+.navegacion__enlace {
+  display: block;
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--blanco);
+}
+
+/* Tarjetas */
+
+.tarjeta {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--gris);
+}
+
+.tarjeta:last-of-type {
+  border: none;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .img-d {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+    grid-auto-flow: column;
+  }
+
+  .img-i {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
+    grid-auto-flow: column;
+  }
+
+  .mover-img {
+    grid-column: 2 / 3;
+  }
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--negro);
+}
+
+@media (max-width: 768px) {
+  .bandera,
+  .escudo {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .bandera,
+  .escudo {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    height: 8rem;
+  }
+
+  .footer .logo {
+    width: 20rem;
+    padding-top: 1rem;
+  }
+}
+
+/* Boton */
+
+.boton {
+  display: block;
+  font-family: var(--fuenteHeading);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  border: none;
+  background-color: var(--negro);
+}
+
+@media (min-width: 768px) {
+  .boton {
+    display: inline-block;
+  }
+}
+
+.boton:hover {
+  cursor: pointer;
+}
+
+/* Cultura */
+
+.comida1 {
+  background-image: url(../img/comida-1.jpg);
+  height: 25rem;
+}
+
+.musica1 {
+  background-image: url(../img/musica-1.png);
+  height: 25rem;
+}
+
+.comida1,
+.comida2,
+.comida3,
+.comida4,
+.musica1,
+.musica2,
+.musica3,
+.musica4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (min-width: 768px) {
+  .mosaico-comida {
+    height: 70rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .mosaico-comida .comida1 {
+    grid-column: 1 / 2;
+    height: 100%;
+  }
+
+  .mosaico-comida .comida2 {
+    grid-column: 2 / 3;
+    background-image: url(../img/comida-2.jpg);
+  }
+
+  .mosaico-comida .comida3 {
+    grid-row: 2 / 3;
+    background-image: url(../img/comida-3.png);
+  }
+
+  .mosaico-comida .comida4 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-image: url(../img/comida-4.jpg);
+  }
+
+  .mosaico-musica {
+    height: 70rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .mosaico-musica .musica1 {
+    grid-column: 1 / 2;
+    height: 100%;
+  }
+
+  .mosaico-musica .musica2 {
+    grid-column: 2 / 4;
+    background-image: url(../img/musica-2.jpg);
+  }
+
+  .mosaico-musica .musica3 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    background-image: url(../img/musica-3.jpg);
+  }
+
+  .mosaico-musica .musica4 {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    background-image: url(../img/musica-4.jpg);
+  }
+}
+
+.evento-img {
+  width: 100%;
+  height: 700px;
+}
+
+.boton-volver-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.boton-volver-arriba:hover {
+  background-color: #333;
+  transform: scale(1.2);
+}
+
+.navegacion__enlace {
+  display: inline-block;
+  padding: 5px;
+  border: 2.5px solid #000;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bolder;
+  color: white;
+  background-color: transparent;
+  transition: ease-in-out 0.3s;
+}
+
+#contador {
+  text-align: center;
+  margin-top: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(17, 202, 42);
+  animation: contadorAnimacion 1s linear infinite;
+  background-color: rgba(7, 4, 25, 15);
+}
+
+@keyframes contadorAnimacion {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-animation {
+  animation: slideIn 1s ease-in-out;
+  scroll-behavior: smooth;
+
+}
