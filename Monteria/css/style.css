@@ -63,6 +63,10 @@ img {
 
 /* Utilidades */
 
+.fijar-body {
+  overflow: hidden;
+}
+
 .no-margin {
   margin: 0;
 }
@@ -205,7 +209,8 @@ img {
 
 /* Boton */
 
-.boton {
+.boton,
+.contador {
   display: block;
   font-family: var(--fuenteHeading);
   color: var(--blanco);
@@ -237,7 +242,7 @@ img {
 }
 
 .musica1 {
-  background-image: url(../img/musica-1.png);
+  background-image: url(../img/musica-1.jpg);
   height: 25rem;
 }
 
@@ -274,7 +279,7 @@ img {
 
   .mosaico-comida .comida3 {
     grid-row: 2 / 3;
-    background-image: url(../img/comida-3.png);
+    background-image: url(../img/comida-3.jpg);
   }
 
   .mosaico-comida .comida4 {
@@ -313,12 +318,17 @@ img {
   }
 }
 
-.evento-img {
-  width: 100%;
-  height: 700px;
+.evento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.boton-volver-arriba {
+.evento-img {
+  width: 90%;
+}
+
+.btnArriba {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -340,38 +350,21 @@ img {
   transform: scale(1.2);
 }
 
-.navegacion__enlace {
-  display: inline-block;
-  padding: 5px;
-  border: 2.5px solid #000;
-  border-radius: 10px;
-  font-size: 17px;
-  font-weight: bolder;
-  color: white;
-  background-color: transparent;
-  transition: ease-in-out 0.3s;
+.contador {
+  margin-top: 2rem;
 }
 
-#contador {
-  text-align: center;
-  margin-top: 15px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(17, 202, 42);
+.contador-animado {
   animation: contadorAnimacion 1s linear infinite;
-  background-color: rgba(7, 4, 25, 15);
 }
 
 @keyframes contadorAnimacion {
   0% {
     transform: scale(1);
   }
-
   50% {
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
-
   100% {
     transform: scale(1);
   }
@@ -391,5 +384,26 @@ img {
 .slide-in-animation {
   animation: slideIn 1s ease-in-out;
   scroll-behavior: smooth;
+}
 
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  background-color: rgb(0 0 0 / 0.6);
+}
+
+picture {
+  display: block;
+}
+
+picture img {
+  max-height: 63rem;
+  -webkit-box-shadow: 0px 10px 50px 10px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 10px 50px 10px rgba(255, 255, 255, 1);
+  box-shadow: 0px 10px 50px 10px rgba(255, 255, 255, 1);
 }
