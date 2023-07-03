@@ -1,0 +1,17 @@
+[
+    {
+        "lugar": "Monumento al Porro \"Maria Varilla\"",
+        "descripcion": "Una María Varilla que eleva al aire su pollera, rodeada por seis músicos que interpretan instrumentos propios del porro, son los nuevos personajes que habitan desde el pasado 27 de noviembre en Montería (Córdoba), y que se ubican a orillas del río Sinú, en el centro de la ciudad.",
+        "img": "/img/porro.jpg"
+    },
+    {
+        "lugar": "Museo Zenú de Arte Contemporáneo",
+        "descripcion": "Este museo es una fundación sin ánimo de lucro que desde el año 2005 difunde el arte y la cultura en la región. Ubicado en la Av.1 #26-3, Montería, Córdoba, expone a diario y con entrada libre sus distintas exposiciones que van desde pinturas, pequeñas esculturas, hasta la alfarería y fotografía.",
+        "img": "/img/museo.jpg"
+    },
+    {
+        "lugar": "La catedral San Jerónimo",
+        "descripcion": "La construcción de esta catedral es una fusión de estilo gótico y republicano y más allá de un lugar de culto es un espacio agradable, fresco y lleno de paz. A su alrededor encontrará quioscos de jugos naturales, sitios donde tomar café o bancas para sentarse a “ver pasar el mundo” mientras observa la cotidianidad,el orgullo con que el embolador saca lustre a unos mocasines, o la agilidad con que bailan sobre las teclas de una Olivetti los dedos de un “tinterillo” que ejerce como abogado de pobres y redacta documentos variopintos para sus clientes afanados.",
+        "img": "/img/catedral.jpg"
+    }
+]

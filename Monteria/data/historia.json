@@ -1,0 +1,12 @@
+[
+    {
+        "historia": "Fundación de Montería",
+        "descripcion": "La ciudad fue fundada oficialmente el 1º de mayo de 1777 por Antonio de la Torre y Miranda, quien la trasladó a su actual ubicación en la ribera derecha del río Sinú y la bautizó como San Jerónimo de Buenavista. Posteriormente fue renombrada como San Jerónimo de Montería. El nombre Montería se da en honor a un primer poblado levantado en el lugar de las monterías, llamado así por ser el sitio de reunión de los monteros que cazaban en sus alrededores.",
+        "img": "img/fundacion.png"
+    },
+    {
+        "historia": "Primeros Habitantes",
+        "descripcion": "Caballeros en ceremonia pública en la Montería de comienzos del siglo XX A medida que nuevos moradores, procedentes de diversas partes, se incorporaban a la población, se fueron implantando también mejores sistemas de enseñanza, y no tardaron en llegar pizarras y poco después papel y tinta. Las plumas de uso corriente eran plumas de aves, en especial de pavo y de pato. En lugar de papel secante empleaban una arenilla que espolvoreaban sobre la tinta y que guardaban luego dentro de una semilla de ceiba para tenerla siempre a la mano.",
+        "img": "img/habitantes.png"
+    }
+]
